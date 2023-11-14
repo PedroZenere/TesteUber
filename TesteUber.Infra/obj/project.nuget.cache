@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "IkFWEkYprAfyfNC9/6wI29NUlEXZxF/HK/KwSnQkOPUWKahIVhWkZxmkkxQ1+Cvxg5Vq394pJjln0nOW2f0MCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pedri\\Documents\\projects\\TesteUber\\TesteUber.Infra\\TesteUber.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pedri\\.nuget\\packages\\awssdk.core\\3.7.300.1\\awssdk.core.3.7.300.1.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\awssdk.simpleemail\\3.7.300.1\\awssdk.simpleemail.3.7.300.1.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
