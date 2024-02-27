@@ -1,6 +1,6 @@
 ﻿using TesteUber.Core.Emails.Model;
 
-namespace TesteUber.Infra.EmailGateway.AmazonMailService.Interfaces
+namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces
 {
     public interface IMailGateway
     {

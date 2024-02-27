@@ -17,6 +17,13 @@ namespace TesteUber.WebApi.Controllers
             _mediator = mediator;
         }
 
+        [HttpGet]
+        public ActionResult<string> Get()
+        {
+            return Ok("Funcionou");
+        }
+
+        [HttpPost]
         public ActionResult SendEmail(EmailCommand command)
         {
             var result = _mediator.Send(command);

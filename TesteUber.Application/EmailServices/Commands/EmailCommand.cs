@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using TesteUber.Core.Emails.Model;
-using TesteUber.Infra.EmailGateway.AmazonMailService.Interfaces;
+using TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces;
 
 namespace TesteUber.Application.EmailServices.Commands
 {

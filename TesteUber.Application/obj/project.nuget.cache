@@ -1,17 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "1xEZ19aGgwIE+vVWzYLSWQrAeZmn8MaE55+gVist8yxMQpOQk3qTrQULp2bfWZbZRxhDbTUiZbPsM8k2gjcDMQ==",
+  "dgSpecHash": "O11jq+USBAf9z61QVRhPe4k9P5kBtrSCq4D20Od6iqHEm0AWCp54NYjaOtyVa9g5qxxGqbVLz8La7CEqcFPD7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedri\\Documents\\projects\\TesteUber\\TesteUber.Application\\TesteUber.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\awssdk.core\\3.7.300.1\\awssdk.core.3.7.300.1.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.300\\awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\awssdk.simpleemail\\3.7.300.1\\awssdk.simpleemail.3.7.300.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
   ],
   "logs": []

@@ -1,9 +1,9 @@
 ﻿using Amazon.SimpleEmail.Model;
 using Amazon.SimpleEmail;
 using TesteUber.Core.Emails.Model;
-using TesteUber.Infra.EmailGateway.AmazonMailService.Interfaces;
+using TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces;
 
-namespace TesteUber.Infra.EmailGateway.AmazonMailService.Services
+namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
 {
     public class MailGateway : IMailGateway
     {

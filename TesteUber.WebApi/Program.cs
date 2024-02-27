@@ -1,7 +1,6 @@
-using Amazon.Runtime;
-using Microsoft.Extensions.Configuration;
-using TesteUber.Infra.EmailGateway.AmazonMailGateway.Extensions;
 using TesteUber.Infra.IoC;
+using TesteUber.Infra.EmailGateway.AmazonMailGateway.Extensions;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -9,11 +8,11 @@ var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.BoostrapDependencyInjection(configuration);
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-ConfigureAWS(configuration);
+builder.Services.AddServiceAmazonSES(configuration);
 
-builder.Services.AddServiceAmazonSES();
+builder.Services.BoostrapDependencyInjection();
 
 var app = builder.Build();
 
@@ -31,18 +30,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-
-#region
-void ConfigureAWS(IConfiguration configuration)
-{
-    Environment.SetEnvironmentVariable("AWS_ACCESS_KEY_ID", configuration["AWSSES:AWS_ACCESS_KEY_ID"]);
-    Environment.SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", configuration["AWSSES:AWS_SECRET_ACCESS_KEY"]);
-    Environment.SetEnvironmentVariable("AWS_SESSION_TOKEN", configuration["AWSSES:AWS_SESSION_TOKEN"]);
-    Environment.SetEnvironmentVariable("AWS_REGION", configuration["AWSSES:AWS_REGION"]);
-}
-#endregion
