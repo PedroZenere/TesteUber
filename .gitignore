@@ -1,9 +1,17 @@
+##### Customizados #####
 
-# Created by https://www.gitignore.io/api/aspnetcore
-# Edit at https://www.gitignore.io/?templates=aspnetcore
+# Local History VS Extension
+.localhistory/
 
-[Nn]ginx/[Cc]erts/*
-.env
+# VS Code Gabriela
+script/.vscode/
+
+#########################
+
+##### Gerados automaticamente #####
+
+# Created by https://www.gitignore.io/api/aspnetcore,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=aspnetcore,visualstudiocode
 
 ### ASPNETCore ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -31,10 +39,7 @@ bld/
 [Ll]og/
 
 # Visual Studio 2015 cache/options directory
-*.vs/
 .vs/
-.vs
-/.vs
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
@@ -158,8 +163,8 @@ publish/
 *.azurePubxml
 # TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
-# *.pubxml
-# *.publishproj
+*.pubxml
+*.publishproj
 
 # Microsoft Azure Web App publish settings. Comment the next line if you want to
 # checkin your Azure Web App publish settings, but sensitive information contained
@@ -167,7 +172,7 @@ publish/
 PublishScripts/
 
 # NuGet Packages
-*.nupkg
+# *.nupkg  # Comentado para usar também um repositório nupkg local
 # The packages folder can be ignored because of Package Restore
 **/packages/*
 # except build/, which is used as an MSBuild target.
@@ -278,8 +283,18 @@ __pycache__/
 # Cake - Uncomment if you are using it
 # tools/
 
-# End of https://www.gitignore.io/api/aspnetcore
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-## SonarQube ##
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/aspnetcore,visualstudiocode
+
+### SonarQube ###
 .sonarqube
-src/Agrihub.Portal.Blazor/Server/.sonarqube
