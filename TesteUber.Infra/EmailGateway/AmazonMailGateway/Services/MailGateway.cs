@@ -38,7 +38,7 @@ namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
                         Data = email.subject
                     }
                 },
-                Source = "pedrinhozenere99@gmail.com"
+                Source = "opedrozenere@gmail.com"
             };
             try
             {
