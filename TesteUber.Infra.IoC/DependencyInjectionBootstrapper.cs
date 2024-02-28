@@ -8,7 +8,7 @@ namespace TesteUber.Infra.IoC
     {
         public static void BoostrapDependencyInjection(this IServiceCollection services)
         {
-            services.AddTransient<IMailGateway, MailGateway>();
+            services.AddScoped<IMailGateway, MailGateway>();
         }
     }
 }
