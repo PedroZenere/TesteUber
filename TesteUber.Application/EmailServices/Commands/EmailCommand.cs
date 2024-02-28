@@ -1,18 +1,19 @@
 ﻿using AutoMapper;
 using MediatR;
+using System.Net;
 using TesteUber.Core.Emails.Model;
 using TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces;
 
 namespace TesteUber.Application.EmailServices.Commands
 {
-    public class EmailCommand : IRequest
+    public class EmailCommand : IRequest<HttpStatusCode>
     {
         public string to { get; set; }
         public string subject { get; set; }
         public string body { get; set; }
     }
 
-    public sealed class EmailCommandHandler : IRequestHandler<EmailCommand>
+    public sealed class EmailCommandHandler : IRequestHandler<EmailCommand, HttpStatusCode>
     {
         private readonly IMailGateway _mailGateway;
         private readonly IMapper _mapper;
@@ -23,11 +24,11 @@ namespace TesteUber.Application.EmailServices.Commands
             _mapper = mapper;
         }
 
-        public async Task Handle(EmailCommand request, CancellationToken cancellationToken)
+        public async Task<HttpStatusCode> Handle(EmailCommand request, CancellationToken cancellationToken)
         {
             var email = _mapper.Map<Email>(request);
 
-            await _mailGateway.SendEmail(email, cancellationToken);
+            return await _mailGateway.SendEmail(email, cancellationToken);
         }
     }
 }

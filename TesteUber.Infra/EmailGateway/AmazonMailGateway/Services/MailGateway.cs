@@ -2,6 +2,7 @@
 using Amazon.SimpleEmail;
 using TesteUber.Core.Emails.Model;
 using TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces;
+using System.Net;
 
 namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
 {
@@ -13,7 +14,7 @@ namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
         {
             _amazonSimpleEmailService = service;
         }
-        public async Task SendEmail(Email email, CancellationToken cToken)
+        public async Task<HttpStatusCode> SendEmail(Email email, CancellationToken cToken)
         {
             var body = new SendEmailRequest
             {
@@ -41,11 +42,13 @@ namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
             };
             try
             {
-                var response = await _amazonSimpleEmailService.SendEmailAsync(body, cToken) ;
+                var response = await _amazonSimpleEmailService.SendEmailAsync(body, cToken);
+
+                return response.HttpStatusCode;
             }
             catch (Exception ex)
             {
-                throw new Exception("Error while send email", ex.InnerException);
+                throw new Exception(ex.Message);
             }
         }
     }

@@ -58,6 +58,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             }
           },
           "imports": [
@@ -251,6 +255,10 @@
             "AWSSDK.SimpleEmail": {
               "target": "Package",
               "version": "[3.7.300.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
             },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",

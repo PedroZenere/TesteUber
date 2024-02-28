@@ -1,9 +1,10 @@
-﻿using TesteUber.Core.Emails.Model;
+﻿using System.Net;
+using TesteUber.Core.Emails.Model;
 
 namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces
 {
     public interface IMailGateway
     {
-        public Task SendEmail(Email email, CancellationToken cancellationToken);
+        public Task<HttpStatusCode> SendEmail(Email email, CancellationToken cancellationToken);
     }
 }

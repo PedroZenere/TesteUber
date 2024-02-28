@@ -10,16 +10,13 @@
   <ItemGroup>
     <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.300" />
     <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.300.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TesteUber.Core\TesteUber.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="EmailGateway\AmazonMailGateway\Extensions\" />
   </ItemGroup>
 
 </Project>

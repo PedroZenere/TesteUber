@@ -17,23 +17,17 @@ namespace TesteUber.WebApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet]
-        public ActionResult<string> Get()
-        {
-            return Ok("Funcionou");
-        }
-
         [HttpPost]
-        public ActionResult SendEmail(EmailCommand command)
+        public async Task<ActionResult> SendEmail(EmailCommand command)
         {
-            var result = _mediator.Send(command);
+            var result = await _mediator.Send(command);
 
-            if(result != null && result.IsCompletedSuccessfully)
+            if(result == System.Net.HttpStatusCode.OK)
             {
                 return Ok(result);
             }
 
-            return StatusCode(500, result.Exception);
+            return StatusCode(((int)result));
         }
     }
 }
