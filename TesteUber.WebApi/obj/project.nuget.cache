@@ -1,20 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "edocImSfeauzMogmL4fHcqTROrItE4hGSbOp/nZ4atS+fJlfbjyNGJOYd5MvUiXQZWhexkzNv8QaoD4s4dyVWw==",
+  "dgSpecHash": "JbV8FQ0dIcBC+Jl5d+JBHaItdS1j+KIwyqYwuqSeJ7DG9x8bPKTQCR5W9kEdGt5nwHmDe3yx9L4kDfxWl7vXWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedri\\Documents\\projects\\TesteUber\\TesteUber.WebApi\\TesteUber.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\awssdk.core\\3.7.300.1\\awssdk.core.3.7.300.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.300\\awssdk.extensions.netcore.setup.3.7.300.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\awssdk.simpleemail\\3.7.300.1\\awssdk.simpleemail.3.7.300.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.16\\microsoft.aspnetcore.jsonpatch.7.0.16.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.16\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.16.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
-    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\pedri\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,14 +1,15 @@
 using TesteUber.Infra.IoC;
 using TesteUber.Infra.EmailGateway.AmazonMailGateway.Extensions;
-using System.Reflection;
+using TesteUber.Application.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers().AddNewtonsoftJson();
 
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddServiceMediatr();
+builder.Services.AddServiceAutoMapper();
 
 builder.Services.AddServiceAmazonSES(configuration);
 

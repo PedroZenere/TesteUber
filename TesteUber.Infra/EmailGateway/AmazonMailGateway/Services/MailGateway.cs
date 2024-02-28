@@ -13,35 +13,35 @@ namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Services
         {
             _amazonSimpleEmailService = service;
         }
-        public async Task SendEmail(Email email)
+        public async Task SendEmail(Email email, CancellationToken cToken)
         {
+            var body = new SendEmailRequest
+            {
+                Destination = new Destination
+                {
+                    ToAddresses = new List<string>() { email.to }
+                },
+                Message = new Message
+                {
+                    Body = new Body
+                    {
+                        Text = new Content
+                        {
+                            Charset = "UTF-8",
+                            Data = email.body
+                        }
+                    },
+                    Subject = new Content
+                    {
+                        Charset = "UTF-8",
+                        Data = email.subject
+                    }
+                },
+                Source = "pedrinhozenere99@gmail.com"
+            };
             try
             {
-                var response = await _amazonSimpleEmailService.SendEmailAsync(
-                    new SendEmailRequest
-                    {
-                        Destination = new Destination
-                        {
-                            ToAddresses = new List<string>() { email.to }
-                        },
-                        Message = new Message
-                        {
-                            Body = new Body
-                            {
-                                Text = new Content
-                                {
-                                    Charset = "UTF-8",
-                                    Data = email.body
-                                }
-                            },
-                            Subject = new Content
-                            {
-                                Charset = "UTF-8",
-                                Data = email.subject
-                            }
-                        },
-                        Source = "opedrozenere@gmail.com"
-                    }) ;
+                var response = await _amazonSimpleEmailService.SendEmailAsync(body, cToken) ;
             }
             catch (Exception ex)
             {

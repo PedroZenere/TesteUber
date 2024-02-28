@@ -4,6 +4,6 @@ namespace TesteUber.Infra.EmailGateway.AmazonMailGateway.Interfaces
 {
     public interface IMailGateway
     {
-        public Task SendEmail(Email email);
+        public Task SendEmail(Email email, CancellationToken cancellationToken);
     }
 }

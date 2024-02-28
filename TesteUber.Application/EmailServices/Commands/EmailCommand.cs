@@ -27,7 +27,7 @@ namespace TesteUber.Application.EmailServices.Commands
         {
             var email = _mapper.Map<Email>(request);
 
-            await _mailGateway.SendEmail(email);
+            await _mailGateway.SendEmail(email, cancellationToken);
         }
     }
 }
